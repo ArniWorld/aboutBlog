@@ -66,3 +66,36 @@ html{
     color: var(--colorWhite);
     font-family: var(--fontPrimary);
 }
+
+/*Pantallas Medianas*/
+/*577 -  768px*/
+@media (max-width:768px){
+    .logo{
+        width: 35%;
+    }
+
+    .navigation{
+        width: 57%;
+    }
+}
+/*0  -  576px*/
+@media (max-width:576px){
+    .navigationContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo{
+        width: 70%;
+        margin-bottom: 1rem;
+
+    }
+    .navigation{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .listNavigatioon{
+        margin-bottom: 0.5rem;
+    }
+}
