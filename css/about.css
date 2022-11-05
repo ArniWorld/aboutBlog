@@ -19,3 +19,50 @@ html{
     text-decoration:none;
     list-style-type:none;
 }
+
+.header{
+    width: 100%;
+    height: 85vh;
+    background-color: var(--colorPrimary);
+    background-image: url(../img/header.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.barnavigation{
+    background-color: var(--colorPrimary);
+    padding: 1rem 0;  /*1rem = 18px*/
+}
+
+.container{
+    width: 85%;
+    margin: 0 auto;
+}
+
+.navigationContainer{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    width: 25%;
+}
+.logoLink{
+    display: inline-block;
+    width: 100%;    
+}
+
+.imgLogo{
+    width: 100%;
+}
+
+.navigation{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.linkNavigation{
+    color: var(--colorWhite);
+    font-family: var(--fontPrimary);
+}
