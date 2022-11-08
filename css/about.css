@@ -32,6 +32,7 @@ html{
 .barnavigation{
     background-color: var(--colorPrimary);
     padding: 1rem 0;  /*1rem = 18px*/
+    margin-bottom: 1rem;
 }
 
 .container{
@@ -67,9 +68,80 @@ html{
     font-family: var(--fontPrimary);
 }
 
+/*MAIN*/
+/*Nosotros*/
+
+
+.title{
+    color: var(--colorSecondary);
+    text-align: center;
+    font-family: var(--fontPrimary);
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.aboutText{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.imageAbout{
+    width: 48%;
+    align-self: stretch;
+    object-fit: cover;
+    object-position: center;
+}
+
+.aboutTextRight{
+    width: 48%;
+}
+
+.textRight{
+    font-size: 1rem;
+    line-height: 1.6;
+    font-family: var(--fontSecondary);
+    text-align: justify;
+   
+}
+
+.aboutTextLeft{
+    width: 48%;
+}
+
+.detailsContainer{
+    display: flex;
+    justify-content: space-around;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textLeft{
+    font-size: 1rem;
+    line-height: 1.6;
+    font-family: var(--fontSecondary);
+    text-align: justify;
+}
+
+.textRight:first-child{
+    margin-bottom: 1rem;
+}
+
+.aboutTextLeft .title{
+    text-align: left;
+    margin-bottom: 1.2rem;
+}
+
 /*Pantallas Medianas*/
 /*577 -  768px*/
 @media (max-width:768px){
+    html{
+        font-size: 20px;
+    }
     .logo{
         width: 35%;
     }
@@ -77,9 +149,16 @@ html{
     .navigation{
         width: 57%;
     }
+    /*Main - textAbout*/
+    .imageAbout, .aboutTextLeft, .aboutTextRight{
+        width: 100%;
+    }
 }
 /*0  -  576px*/
 @media (max-width:576px){
+    html{
+        font-size: 22px;
+    }
     .navigationContainer{
         flex-direction: column;
         align-items: center;
@@ -97,5 +176,18 @@ html{
 
     .listNavigatioon{
         margin-bottom: 0.5rem;
+    }
+
+    .detailsContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .details{
+        margin-bottom: 1rem;
+    }
+
+    .details:last-child{
+        margin-bottom: 0;
     }
 }
