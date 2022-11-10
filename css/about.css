@@ -77,7 +77,7 @@ html{
     text-align: center;
     font-family: var(--fontPrimary);
     font-size: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
 }
 .aboutText{
     display: flex;
@@ -85,6 +85,7 @@ html{
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .imageAbout{
@@ -136,6 +137,54 @@ html{
     margin-bottom: 1.2rem;
 }
 
+/*ourTeam*/
+.ourTeam{
+    margin-bottom: 1.5rem;
+}
+
+.teamContainer{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.team{
+    width: 20%;
+    cursor: pointer;
+}
+
+.imageTeam{
+    width: 100%;
+    transform: translateX(17px);
+    transition: transform .5s ease;
+}
+
+.teamDetails{
+    background-color: var(--colorSecondary);
+    margin-top: -7px;
+    padding: 1rem;
+    transform: translateX(-17px);
+    transition: transform .5s ease;
+}
+
+.team:hover .imageTeam, .team:hover .teamDetails{
+    transform: translateX(0);
+}
+
+.name{
+    color: var(--colorWhite);
+    font-size: 1.3rem;
+    font-family: var(--fontPrimary);
+    margin-bottom: 1rem;
+}
+
+.profession{
+    color: var(--colorWhite);
+    font-size: 1rem;
+    font-family: var(--fontSecondary);
+}
+
 /*Pantallas Medianas*/
 /*577 -  768px*/
 @media (max-width:768px){
@@ -153,6 +202,12 @@ html{
     .imageAbout, .aboutTextLeft, .aboutTextRight{
         width: 100%;
     }
+
+    /*Main .ourTeam*/
+    .team{
+        width:40%;
+    }
+
 }
 /*0  -  576px*/
 @media (max-width:576px){
@@ -190,4 +245,14 @@ html{
     .details:last-child{
         margin-bottom: 0;
     }
+ 
+    /*Main .ourTeam*/
+    .team{
+        width:80%;
+    }
+
+    .imageTeam, .teamDetails{
+        transform: translateX(0);
+    }
+
 }
