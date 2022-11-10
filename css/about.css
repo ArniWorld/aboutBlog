@@ -32,7 +32,7 @@ html{
 .barnavigation{
     background-color: var(--colorPrimary);
     padding: 1rem 0;  /*1rem = 18px*/
-    margin-bottom: 1rem;
+    margin-bottom: 1.7rem;
 }
 
 .container{
@@ -76,7 +76,7 @@ html{
     color: var(--colorSecondary);
     text-align: center;
     font-family: var(--fontPrimary);
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 2rem;
 }
 .aboutText{
@@ -253,7 +253,7 @@ html{
 
 /*Pantallas Medianas*/
 /*577 -  768px*/
-@media (max-width:768px){
+@media (max-width:976px){
     html{
         font-size: 20px;
     }
@@ -270,6 +270,9 @@ html{
     }
 
     /*Main .ourTeam*/
+    .teamContainer{
+        gap: 2.5rem;
+    }
     .team{
         width:40%;
     }
